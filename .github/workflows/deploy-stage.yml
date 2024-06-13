@@ -10,11 +10,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@v1
+      uses: actions/checkout@v4
 
-    - name: Build and Deploy
+    - name: Build
+      # will use the GitHub env variables
       run: |
-        yarn deploy
-      env:
-        REACT_APP_MEILI_SERVER_ADDRESS: ${{ vars.REACT_APP_MEILI_SERVER_ADDRESS }}
-        REACT_APP_MEILI_API_KEY: ${{ vars.REACT_APP_MEILI_API_KEY }}
+        yarn
+        yarn build
+
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        folder: build
