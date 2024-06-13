@@ -1,0 +1,26 @@
+name: deploy-to-github-pages
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v1
+
+    - name: Build
+      run: |
+        yarn
+        yarn build
+      env:
+        REACT_APP_MEILI_SERVER_ADDRESS: ${{ secrets.REACT_APP_MEILI_SERVER_ADDRESS }}
+        REACT_APP_MEILI_API_KEY: ${{ secrets.REACT_APP_MEILI_API_KEY }}
+
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@releases/v4
+      with:
+        branch: gh-pages
+        folder: build
