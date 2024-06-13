@@ -12,16 +12,9 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v1
 
-    - name: Build
+    - name: Build and Deploy
       run: |
-        yarn
-        yarn build
+        yarn deploy
       env:
         REACT_APP_MEILI_SERVER_ADDRESS: ${{ vars.REACT_APP_MEILI_SERVER_ADDRESS }}
         REACT_APP_MEILI_API_KEY: ${{ vars.REACT_APP_MEILI_API_KEY }}
-
-    - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@releases/v4
-      with:
-        branch: gh-pages
-        folder: build
