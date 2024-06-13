@@ -45,6 +45,7 @@
     "react/no-invalid-html-attribute": 0,
     "react/jsx-no-useless-fragment": "off",
     "react/no-unused-class-component-methods": 0,
-    "react/require-default-props": "off"
+    "react/require-default-props": "off",
+    "cypress/unsafe-to-chain-command": "off"
   }
 }
