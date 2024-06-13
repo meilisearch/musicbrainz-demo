@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import 'react-lazy-load-image-component/src/effects/opacity.css'
 import Box from 'components/Box'
@@ -21,24 +21,15 @@ const ArtistContainer = styled.li`
   margin-bottom: 16px;
 `
 
-const ArtistHit = ({ hit }) => {
-  useEffect(() => {
-    if (!hit._highlightResult) {
-      // eslint-disable-next-line no-console
-      console.warn('Your hits have no field. Please check your index settings.')
-    }
-  }, [hit._highlightResult])
-
-  return (
-    <ArtistContainer>
-      <CustomCard>
-        <Box width={200} mr={4} flexShrink={0}>
-          {hit.artist}
-        </Box>
-      </CustomCard>
-    </ArtistContainer>
-  )
-}
+const ArtistHit = ({ hit }) => (
+  <ArtistContainer>
+    <CustomCard>
+      <Box width={200} mr={4} flexShrink={0}>
+        {hit.artist}
+      </Box>
+    </CustomCard>
+  </ArtistContainer>
+)
 
 const ArtistHits = ({ hits, index, limit = 4 }) => (
   <MainContainer>

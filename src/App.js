@@ -28,6 +28,36 @@ const Wrapper = styled.div`
 const App = () => {
   const [currentIndex, setCurrentIndex] = useLocalStorage('currentIndex')
 
+  if (!currentIndex) {
+    setCurrentIndex({
+      uid: 'MusicBrainz',
+      stats: {
+        numberOfDocuments: 44978258,
+        isIndexing: false,
+        fieldDistribution: {
+          _vectors: 44479493,
+          album: 44978258,
+          artist: 44978258,
+          artist_rating: 10751745,
+          artist_rating_count: 10751745,
+          duration: 40458440,
+          genres: 44978258,
+          id: 44978258,
+          image_url: 44978258,
+          last_updated: 44978258,
+          last_updated_timestamp: 44978258,
+          new_rating: 44978258,
+          rating: 10751745,
+          raw_rating: 44978258,
+          released_year: 44978258,
+          status: 44978258,
+          title: 44978258,
+          track_rating: 3551527,
+        },
+      },
+    })
+  }
+
   const { setMeilisearchJsClient, setInstantMeilisearchClient } =
     useMeilisearchClientContext()
 
