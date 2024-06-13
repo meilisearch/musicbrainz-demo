@@ -28,7 +28,7 @@ const InfiniteHits = connectInfiniteHits(({ hits, hasMore, refineNext }) => {
 
   return (
     <div>
-      <Configure hitsPerPage={21} />
+      <Configure hitsPerPage={20} />
       <HitsList>
         {hits.map((hit, index) => {
           if (index === 2) {
