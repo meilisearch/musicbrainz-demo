@@ -16,12 +16,9 @@ jobs:
       run: |
         yarn
         yarn build
-        echo "SHOWING VARIABLES"
-        env
-        echo "END SHOWING VARIABLES"
       env:
-        REACT_APP_MEILI_SERVER_ADDRESS: ${{ env.REACT_APP_MEILI_SERVER_ADDRESS }}
-        REACT_APP_MEILI_API_KEY: ${{ env.REACT_APP_MEILI_API_KEY }}
+        REACT_APP_MEILI_SERVER_ADDRESS: ${{ secrets.REACT_APP_MEILI_SERVER_ADDRESS }}
+        REACT_APP_MEILI_API_KEY: ${{ secrets.REACT_APP_MEILI_API_KEY }}
 
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@v4
