@@ -2,23 +2,7 @@
   <img src="https://raw.githubusercontent.com/meilisearch/integration-guides/main/assets/logos/logo.svg" alt="Meilisearch logo" width="200" height="200" />
 </p>
 
-<h1 align="center">Mini Dashboard</h1>
-
----
-
-🚨 IMPORTANT NOTICE: Reduced Maintenance & Support 🚨
-
-*Dear Community,*
-
-*We'd like to share some updates regarding the future maintenance of this repository:*
-
-*Our team is small, and our availability will be reduced in the upcoming times. As such, response times might be slower, and we will not be accepting enhancements for this repository moving forward.*
-
-*If you're looking for reliable alternatives, consider using [Meilisearch Cloud](https://meilisearch.com/cloud?utm_campaign=oss&utm_source=github&utm_medium=minidashboard). For instance, it offers a convenient solution for managing your index settings.*
-
-*Seeking immediate support? Please join us on [our Discord server](https://discord.meilisearch.com).*
-
----
+<h1 align="center">MusicBrainz Demo</h1>
 
 <h4 align="center">
   <a href="https://www.meilisearch.com/?utm_campaign=oss&utm_source=github&utm_medium=minidashboard">Website</a> |
@@ -29,16 +13,6 @@
 </h4>
 
 > Meilisearch is an open-source search engine that offers fast, relevant search out of the box.
-
-👉 [Meilisearch repository](https://github.com/meilisearch/meilisearch)
-
-<p align="center" style="font-weight:bold;">Meilisearch's mini-dashboard. A web-app served by the engine with a minimal search experience on your data.</p>
-
-<br/>
-<p align="center">
-  <img src="assets/trumen_quick_loop.gif" alt="Web interface gif" />
-</p>
-<br/>
 
 **Table of Contents**:
 
@@ -87,7 +61,7 @@ If you want to specify the URL where your Meilisearch is running, use the `REACT
 Example:
 
 ```bash
-REACT_APP_MEILI_SERVER_ADDRESS=http://0.0.0.0:7700 yarn build
+REACT_APP_MEILI_SERVER_ADDRESS=http://0.0.0.0:7700 REACT_APP_MEILI_API_KEY=xxx yarn build
 ```
 
 ### Run your build

@@ -1,8 +1,9 @@
-name: deploy-to-github-pages
+name: Deploy to Github Pages
 on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   build-and-deploy:
