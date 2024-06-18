@@ -1,7 +1,7 @@
 {
   "name": "mini-dashboard",
   "version": "0.2.14",
-  "homepage": "https://meilisearch.github.io/musicbrainz-demo",
+  "homepage": "https://musics.meilisearch.com",
   "private": true,
   "dependencies": {
     "@meilisearch/instant-meilisearch": "^1.0.0",
