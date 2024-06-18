@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/musicbrainz-demo/static/css/main.7d1dde7f.css",
-    "main.js": "/musicbrainz-demo/static/js/main.dfcbadee.js",
+    "main.js": "/musicbrainz-demo/static/js/main.e9d8ff5b.js",
     "index.html": "/musicbrainz-demo/index.html",
     "main.7d1dde7f.css.map": "/musicbrainz-demo/static/css/main.7d1dde7f.css.map",
-    "main.dfcbadee.js.map": "/musicbrainz-demo/static/js/main.dfcbadee.js.map"
+    "main.e9d8ff5b.js.map": "/musicbrainz-demo/static/js/main.e9d8ff5b.js.map"
   },
   "entrypoints": [
     "static/css/main.7d1dde7f.css",
-    "static/js/main.dfcbadee.js"
+    "static/js/main.e9d8ff5b.js"
   ]
 }
