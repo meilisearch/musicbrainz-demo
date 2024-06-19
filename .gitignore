@@ -30,3 +30,11 @@ meilisearch
 cypress/screenshots
 cypress/videos
 cypress/plugins
+
+# Yarn
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
