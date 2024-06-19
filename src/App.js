@@ -25,6 +25,18 @@ const Wrapper = styled.div`
   min-height: 100vh;
 `
 
+const Scripts = () => {
+  if (process.env.NODE_ENV === 'development') {
+    return null
+  }
+  const fathomTrackingCode = process.env.REACT_APP_FATHOM_TRACKING_CODE
+  return (<script
+    id="fathom-script"
+    src="https://cdn.usefathom.com/script.js"
+    data-site={fathomTrackingCode}
+  />)
+}
+
 const App = () => {
   const [currentIndex, setCurrentIndex] = useLocalStorage('currentIndex')
 
@@ -82,7 +94,10 @@ const App = () => {
     <ArtistsProvider>
       <ApiKeyContext.Provider value={{ apiKey }}>
         <Wrapper>
-          <Body currentIndex={currentIndex} setCurrentIndex={setCurrentIndex} />
+          <>
+            <Body currentIndex={currentIndex} setCurrentIndex={setCurrentIndex} />
+            <Scripts />
+          </>
         </Wrapper>
       </ApiKeyContext.Provider>
     </ArtistsProvider>
