@@ -83,7 +83,10 @@ const App = () => {
       <ApiKeyContext.Provider value={{ apiKey }}>
         <Wrapper>
           <>
-            <Body currentIndex={currentIndex} setCurrentIndex={setCurrentIndex} />
+            <Body
+              currentIndex={currentIndex}
+              setCurrentIndex={setCurrentIndex}
+            />
           </>
         </Wrapper>
       </ApiKeyContext.Provider>
