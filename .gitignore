@@ -38,3 +38,6 @@ cypress/plugins
 !.yarn/sdks
 !.yarn/versions
 .pnp.*
+
+# environment
+.env
