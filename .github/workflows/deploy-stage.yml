@@ -11,7 +11,12 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v4
-
+    - name: Setup node
+      uses: actions/setup-node@v4
+      with:
+        node-version: 18
+        cache: "yarn"
+        cache-dependency-path: yarn.lock
     - name: Build
       run: |
         yarn
@@ -20,7 +25,6 @@ jobs:
         REACT_APP_MEILI_SERVER_ADDRESS: ${{ secrets.REACT_APP_MEILI_SERVER_ADDRESS }}
         REACT_APP_MEILI_API_KEY: ${{ secrets.REACT_APP_MEILI_API_KEY }}
         REACT_APP_FATHOM_TRACKING_CODE: ${{ secrets.REACT_APP_FATHOM_TRACKING_CODE }}
-
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@v4
       with:
