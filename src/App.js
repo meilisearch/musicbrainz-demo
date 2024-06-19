@@ -25,18 +25,6 @@ const Wrapper = styled.div`
   min-height: 100vh;
 `
 
-const Scripts = () => {
-  if (process.env.NODE_ENV === 'development') {
-    return null
-  }
-  const fathomTrackingCode = process.env.REACT_APP_FATHOM_TRACKING_CODE
-  return (<script
-    id="fathom-script"
-    src="https://cdn.usefathom.com/script.js"
-    data-site={fathomTrackingCode}
-  />)
-}
-
 const App = () => {
   useEffect(() => {
     document.title = "Search in millions of musics with Meilisearch";
@@ -100,7 +88,6 @@ const App = () => {
         <Wrapper>
           <>
             <Body currentIndex={currentIndex} setCurrentIndex={setCurrentIndex} />
-            <Scripts />
           </>
         </Wrapper>
       </ApiKeyContext.Provider>
