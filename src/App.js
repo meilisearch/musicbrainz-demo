@@ -26,10 +26,6 @@ const Wrapper = styled.div`
 `
 
 const App = () => {
-  useEffect(() => {
-    document.title = "Search in millions of musics with Meilisearch";
-  }, []);
-
   const [currentIndex, setCurrentIndex] = useLocalStorage('currentIndex')
 
   if (!currentIndex) {
@@ -87,7 +83,10 @@ const App = () => {
       <ApiKeyContext.Provider value={{ apiKey }}>
         <Wrapper>
           <>
-            <Body currentIndex={currentIndex} setCurrentIndex={setCurrentIndex} />
+            <Body
+              currentIndex={currentIndex}
+              setCurrentIndex={setCurrentIndex}
+            />
           </>
         </Wrapper>
       </ApiKeyContext.Provider>
