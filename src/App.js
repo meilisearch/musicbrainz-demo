@@ -38,6 +38,10 @@ const Scripts = () => {
 }
 
 const App = () => {
+  useEffect(() => {
+    document.title = "Search in millions of musics with Meilisearch";
+  }, []);
+
   const [currentIndex, setCurrentIndex] = useLocalStorage('currentIndex')
 
   if (!currentIndex) {
