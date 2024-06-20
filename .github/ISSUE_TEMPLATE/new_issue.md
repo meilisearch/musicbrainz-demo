@@ -1,6 +1,6 @@
 ---
-name: Bug Report 🐞
-about: Create a report to help us improve.
+name: New issue 💡
+about: Create an issue to help us improve this project.
 title: ''
 labels: ''
 assignees: ''
