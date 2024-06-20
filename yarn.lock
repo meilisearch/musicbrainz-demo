@@ -13902,12 +13902,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"meilisearch@npm:^0.38.0":
-  version: 0.38.0
-  resolution: "meilisearch@npm:0.38.0"
+"meilisearch@npm:^0.40.0":
+  version: 0.40.0
+  resolution: "meilisearch@npm:0.40.0"
   dependencies:
     cross-fetch: "npm:^3.1.6"
-  checksum: 10c0/df2133e2f3a3c1db4cb9047bfe4c2354b35d43306ad08a880dd11c9d61a05dcf044640ea848f6d3704902686c51aa68881aad8231e88b89e4a454005a66753c3
+  checksum: 10c0/f032dc271ab3d68e7d396aa86cd72a0550f785f971fa8a35f908bad3bfd4b40bdf10ce25be80c7cd921d36b1af85d12e0d6a951c34baadbf6f76e07792b3024b
   languageName: node
   linkType: hard
 
@@ -14251,7 +14251,7 @@ __metadata:
     eslint-plugin-react: "npm:^7.31.11"
     gh-pages: "npm:^6.1.1"
     instantsearch.js: "npm:^4.68.0"
-    meilisearch: "npm:^0.38.0"
+    meilisearch: "npm:^0.40.0"
     prettier: "npm:^3.3.2"
     prop-types: "npm:^15.8.1"
     react: "npm:^18.3.1"
