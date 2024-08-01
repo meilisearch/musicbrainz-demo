@@ -6668,14 +6668,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"algoliasearch-helper@npm:3.19.0":
-  version: 3.19.0
-  resolution: "algoliasearch-helper@npm:3.19.0"
+"algoliasearch-helper@npm:3.22.3":
+  version: 3.22.3
+  resolution: "algoliasearch-helper@npm:3.22.3"
   dependencies:
     "@algolia/events": "npm:^4.0.1"
   peerDependencies:
     algoliasearch: ">= 3.1 < 6"
-  checksum: 10c0/43107e22259cfce9bd3c8a4c8f93c42bc053f888566c07cdfd337ac9ee010ff16edb7c248646433eee73d8f95917cb442361530d32f120acd1e7bd289e40638d
+  checksum: 10c0/c522eedd6cef022cd5c23ad3ec24691ce555ea1401cdd8c1cd650070b083dbd10bb6e859436d3a22659cc7a3ec9c056accbc6c02f957e1e316c2f5b3ec387f92
   languageName: node
   linkType: hard
 
@@ -11921,34 +11921,34 @@ __metadata:
   languageName: node
   linkType: hard
 
-"instantsearch-ui-components@npm:0.5.0":
-  version: 0.5.0
-  resolution: "instantsearch-ui-components@npm:0.5.0"
+"instantsearch-ui-components@npm:0.8.0":
+  version: 0.8.0
+  resolution: "instantsearch-ui-components@npm:0.8.0"
   dependencies:
     "@babel/runtime": "npm:^7.1.2"
-  checksum: 10c0/58d5e61decabbc3e7344272777d2b50f3e3b69439935a3138be5309303c7a034721ffbcc3e85a05eae35a05536202e31ee7eda77653894e379d567b47c9e8b80
+  checksum: 10c0/f161ea4ed237bc8edfa181256f2008c0687fe235759c4d62ecac24be79630ce5d99bf615237469f42d0cc918a24812b2542e04d3a211cd835836a75593f55ef0
   languageName: node
   linkType: hard
 
-"instantsearch.js@npm:^4.68.0":
-  version: 4.68.0
-  resolution: "instantsearch.js@npm:4.68.0"
+"instantsearch.js@npm:^4.73.3":
+  version: 4.73.3
+  resolution: "instantsearch.js@npm:4.73.3"
   dependencies:
     "@algolia/events": "npm:^4.0.1"
     "@types/dom-speech-recognition": "npm:^0.0.1"
     "@types/google.maps": "npm:^3.45.3"
     "@types/hogan.js": "npm:^3.0.0"
     "@types/qs": "npm:^6.5.3"
-    algoliasearch-helper: "npm:3.19.0"
+    algoliasearch-helper: "npm:3.22.3"
     hogan.js: "npm:^3.0.2"
     htm: "npm:^3.0.0"
-    instantsearch-ui-components: "npm:0.5.0"
+    instantsearch-ui-components: "npm:0.8.0"
     preact: "npm:^10.10.0"
     qs: "npm:^6.5.1 < 6.10"
-    search-insights: "npm:^2.13.0"
+    search-insights: "npm:^2.15.0"
   peerDependencies:
     algoliasearch: ">= 3.1 < 6"
-  checksum: 10c0/140b1d3716c49a2ec7a2c2cb5346853b56b491a15e52222219e291b7da300e6aa410a2261e9fb98e5a3d2ca8ad43316c91459857e3bf9fc97a98fb5cd1ba8119
+  checksum: 10c0/feed70b8d4be9983502de4b4af0dbb03848454c3ff904aacc0ef3d94ab998a742b5fb5879a7e5699040537758b36a075c24c753ba9bc997023965aa0a90205cd
   languageName: node
   linkType: hard
 
@@ -14250,7 +14250,7 @@ __metadata:
     eslint-plugin-prettier: "npm:^5.1.3"
     eslint-plugin-react: "npm:^7.31.11"
     gh-pages: "npm:^6.1.1"
-    instantsearch.js: "npm:^4.68.0"
+    instantsearch.js: "npm:^4.73.3"
     meilisearch: "npm:^0.38.0"
     prettier: "npm:^3.3.2"
     prop-types: "npm:^15.8.1"
@@ -17388,10 +17388,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"search-insights@npm:^2.13.0":
-  version: 2.13.0
-  resolution: "search-insights@npm:2.13.0"
-  checksum: 10c0/9235cc25e45bd3602edf1337aa43a89152575eda82bbec4f6fa7c8f61f45c788948e1ed6cfb26e986811307b7e83a56892fb3fbc77a84cfea3d84cd4cf0ad2b3
+"search-insights@npm:^2.15.0":
+  version: 2.15.0
+  resolution: "search-insights@npm:2.15.0"
+  checksum: 10c0/fecef0382e49b86c027f5c2fa91692844b50d3296f07e3aba3e181e1d3d62c83e26b0f68cd0abfea3c8ae856cd824c8534b1887c7405d19d2184576d1e3e6445
   languageName: node
   linkType: hard
 
